@@ -17,3 +17,4 @@ matplotlib
 fire
 packaging
 pyyaml
+tiktoken
