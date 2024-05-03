@@ -18,3 +18,4 @@ fire
 packaging
 pyyaml
 tiktoken
+openai
