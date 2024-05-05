@@ -192,5 +192,10 @@
   },
   "im_the_fated_villain_chapters": {
     "file_name": "ImTheFatedVillainChaptersDataset.json"
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }
