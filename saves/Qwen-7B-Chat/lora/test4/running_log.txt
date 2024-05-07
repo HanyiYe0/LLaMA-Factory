@@ -1,0 +1,72 @@
+05/05/2024 23:30:25 - INFO - transformers.tokenization_utils_base - loading file qwen.tiktoken from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/qwen.tiktoken
+
+05/05/2024 23:30:25 - INFO - transformers.tokenization_utils_base - loading file added_tokens.json from cache at None
+
+05/05/2024 23:30:25 - INFO - transformers.tokenization_utils_base - loading file special_tokens_map.json from cache at None
+
+05/05/2024 23:30:25 - INFO - transformers.tokenization_utils_base - loading file tokenizer_config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/tokenizer_config.json
+
+05/05/2024 23:30:25 - INFO - transformers.tokenization_utils_base - loading file tokenizer.json from cache at None
+
+05/05/2024 23:30:25 - INFO - llmtuner.data.template - Add eos token: <|im_end|>
+
+05/05/2024 23:30:25 - INFO - llmtuner.data.template - Add pad token: <|im_end|>
+
+05/05/2024 23:30:25 - INFO - llmtuner.data.loader - Loading dataset ImTheFatedVillainChaptersDataset.json...
+
+05/05/2024 23:30:25 - WARNING - llmtuner.data.utils - Checksum failed: missing SHA-1 hash value in dataset_info.json.
+
+05/05/2024 23:30:26 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/config.json
+
+05/05/2024 23:30:26 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/config.json
+
+05/05/2024 23:30:26 - INFO - transformers.configuration_utils - Model config QWenConfig {
+  "_name_or_path": "Qwen/Qwen-7B-Chat",
+  "architectures": [
+    "QWenLMHeadModel"
+  ],
+  "attn_dropout_prob": 0.0,
+  "auto_map": {
+    "AutoConfig": "Qwen/Qwen-7B-Chat--configuration_qwen.QWenConfig",
+    "AutoModelForCausalLM": "Qwen/Qwen-7B-Chat--modeling_qwen.QWenLMHeadModel"
+  },
+  "bf16": false,
+  "emb_dropout_prob": 0.0,
+  "fp16": false,
+  "fp32": false,
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 22016,
+  "kv_channels": 128,
+  "layer_norm_epsilon": 1e-06,
+  "max_position_embeddings": 32768,
+  "model_type": "qwen",
+  "no_bias": true,
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "onnx_safe": null,
+  "rotary_emb_base": 10000,
+  "rotary_pct": 1.0,
+  "scale_attn_weights": true,
+  "seq_length": 8192,
+  "softmax_in_fp32": false,
+  "tie_word_embeddings": false,
+  "tokenizer_class": "QWenTokenizer",
+  "transformers_version": "4.40.1",
+  "use_cache": true,
+  "use_cache_kernel": false,
+  "use_cache_quantization": false,
+  "use_dynamic_ntk": true,
+  "use_flash_attn": "auto",
+  "use_logn_attn": true,
+  "vocab_size": 151936
+}
+
+
+05/05/2024 23:30:26 - INFO - transformers.modeling_utils - loading weights file model.safetensors from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/model.safetensors.index.json
+
+05/05/2024 23:30:26 - INFO - transformers.modeling_utils - Instantiating QWenLMHeadModel model under default dtype torch.float32.
+
+05/05/2024 23:30:26 - INFO - transformers.generation.configuration_utils - Generate config GenerationConfig {}
+
+

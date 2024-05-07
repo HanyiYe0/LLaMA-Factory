@@ -1,0 +1,128 @@
+05/05/2024 23:59:03 - INFO - transformers.tokenization_utils_base - loading file qwen.tiktoken from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/qwen.tiktoken
+
+05/05/2024 23:59:03 - INFO - transformers.tokenization_utils_base - loading file added_tokens.json from cache at None
+
+05/05/2024 23:59:03 - INFO - transformers.tokenization_utils_base - loading file special_tokens_map.json from cache at None
+
+05/05/2024 23:59:03 - INFO - transformers.tokenization_utils_base - loading file tokenizer_config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/tokenizer_config.json
+
+05/05/2024 23:59:03 - INFO - transformers.tokenization_utils_base - loading file tokenizer.json from cache at None
+
+05/05/2024 23:59:03 - INFO - llmtuner.data.template - Add eos token: <|endoftext|>
+
+05/05/2024 23:59:03 - INFO - llmtuner.data.template - Add pad token: <|endoftext|>
+
+05/05/2024 23:59:03 - INFO - llmtuner.data.loader - Loading dataset ImTheFatedVillainChaptersDataset.json...
+
+05/05/2024 23:59:03 - WARNING - llmtuner.data.utils - Checksum failed: missing SHA-1 hash value in dataset_info.json.
+
+05/05/2024 23:59:08 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/config.json
+
+05/05/2024 23:59:08 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/config.json
+
+05/05/2024 23:59:08 - INFO - transformers.configuration_utils - Model config QWenConfig {
+  "_name_or_path": "Qwen/Qwen-1_8B",
+  "architectures": [
+    "QWenLMHeadModel"
+  ],
+  "attn_dropout_prob": 0.0,
+  "auto_map": {
+    "AutoConfig": "Qwen/Qwen-1_8B--configuration_qwen.QWenConfig",
+    "AutoModelForCausalLM": "Qwen/Qwen-1_8B--modeling_qwen.QWenLMHeadModel"
+  },
+  "bf16": false,
+  "emb_dropout_prob": 0.0,
+  "fp16": false,
+  "fp32": false,
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "kv_channels": 128,
+  "layer_norm_epsilon": 1e-06,
+  "max_position_embeddings": 8192,
+  "model_type": "qwen",
+  "no_bias": true,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "onnx_safe": null,
+  "rotary_emb_base": 10000,
+  "rotary_pct": 1.0,
+  "scale_attn_weights": true,
+  "seq_length": 8192,
+  "softmax_in_fp32": false,
+  "tie_word_embeddings": false,
+  "tokenizer_class": "QWenTokenizer",
+  "transformers_version": "4.40.1",
+  "use_cache": true,
+  "use_cache_kernel": false,
+  "use_cache_quantization": false,
+  "use_dynamic_ntk": true,
+  "use_flash_attn": "auto",
+  "use_logn_attn": true,
+  "vocab_size": 151936
+}
+
+
+05/05/2024 23:59:09 - INFO - transformers.modeling_utils - loading weights file model.safetensors from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/model.safetensors.index.json
+
+05/06/2024 00:04:54 - INFO - transformers.modeling_utils - Instantiating QWenLMHeadModel model under default dtype torch.float32.
+
+05/06/2024 00:04:54 - INFO - transformers.generation.configuration_utils - Generate config GenerationConfig {}
+
+
+05/06/2024 00:04:59 - INFO - transformers.modeling_utils - All model checkpoint weights were used when initializing QWenLMHeadModel.
+
+
+05/06/2024 00:04:59 - INFO - transformers.modeling_utils - All the weights of QWenLMHeadModel were initialized from the model checkpoint at Qwen/Qwen-1_8B.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use QWenLMHeadModel for predictions without further training.
+
+05/06/2024 00:04:59 - INFO - transformers.generation.configuration_utils - loading configuration file generation_config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-1_8B/snapshots/fa6e214ccbbc6a55235c26ef406355b6bfdf5eed/generation_config.json
+
+05/06/2024 00:04:59 - INFO - transformers.generation.configuration_utils - Generate config GenerationConfig {
+  "chat_format": "raw",
+  "do_sample": true,
+  "eos_token_id": 151643,
+  "max_new_tokens": 512,
+  "pad_token_id": 151643,
+  "stop_words_ids": [
+    [
+      151643
+    ]
+  ],
+  "top_k": 0,
+  "top_p": 0.8
+}
+
+
+05/06/2024 00:04:59 - WARNING - llmtuner.model.utils.checkpointing - You are using the old GC format, some features (e.g. BAdam) will be invalid.
+
+05/06/2024 00:04:59 - INFO - llmtuner.model.utils.checkpointing - Gradient checkpointing enabled.
+
+05/06/2024 00:04:59 - INFO - llmtuner.model.utils.attention - Using vanilla Attention implementation.
+
+05/06/2024 00:04:59 - INFO - llmtuner.model.adapter - Fine-tuning method: LoRA
+
+05/06/2024 00:04:59 - INFO - llmtuner.model.loader - trainable params: 1572864 || all params: 1838401536 || trainable%: 0.0856
+
+05/06/2024 00:04:59 - INFO - transformers.trainer - You have loaded a model on multiple GPUs. `is_model_parallel` attribute will be force-set to `True` to avoid any unexpected behavior such as device placement mismatching.
+
+05/06/2024 00:04:59 - INFO - transformers.trainer - ***** Running training *****
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Num examples = 741
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Num Epochs = 3
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Instantaneous batch size per device = 2
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Total train batch size (w. parallel, distributed & accumulation) = 16
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Gradient Accumulation steps = 8
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Total optimization steps = 138
+
+05/06/2024 00:04:59 - INFO - transformers.trainer -   Number of trainable parameters = 1,572,864
+
+05/06/2024 00:20:28 - INFO - llmtuner.extras.callbacks - {'loss': 2.4451, 'learning_rate': 4.9838e-05, 'epoch': 0.11}
+
+05/06/2024 00:36:13 - INFO - llmtuner.extras.callbacks - {'loss': 2.4132, 'learning_rate': 4.9355e-05, 'epoch': 0.22}
+

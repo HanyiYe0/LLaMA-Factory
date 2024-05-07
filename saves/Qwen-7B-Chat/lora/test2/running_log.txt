@@ -1,0 +1,75 @@
+05/05/2024 22:26:32 - INFO - transformers.tokenization_utils_base - loading file qwen.tiktoken from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/qwen.tiktoken
+
+05/05/2024 22:26:32 - INFO - transformers.tokenization_utils_base - loading file added_tokens.json from cache at None
+
+05/05/2024 22:26:32 - INFO - transformers.tokenization_utils_base - loading file special_tokens_map.json from cache at None
+
+05/05/2024 22:26:32 - INFO - transformers.tokenization_utils_base - loading file tokenizer_config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/tokenizer_config.json
+
+05/05/2024 22:26:32 - INFO - transformers.tokenization_utils_base - loading file tokenizer.json from cache at None
+
+05/05/2024 22:26:32 - INFO - llmtuner.data.template - Add eos token: <|im_end|>
+
+05/05/2024 22:26:32 - INFO - llmtuner.data.template - Add pad token: <|im_end|>
+
+05/05/2024 22:26:32 - INFO - llmtuner.data.loader - Loading dataset ImTheFatedVillainChaptersDataset.json...
+
+05/05/2024 22:26:32 - WARNING - llmtuner.data.utils - Checksum failed: missing SHA-1 hash value in dataset_info.json.
+
+05/05/2024 22:26:38 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/config.json
+
+05/05/2024 22:26:38 - INFO - transformers.configuration_utils - loading configuration file config.json from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/config.json
+
+05/05/2024 22:26:38 - INFO - transformers.configuration_utils - Model config QWenConfig {
+  "_name_or_path": "Qwen/Qwen-7B-Chat",
+  "architectures": [
+    "QWenLMHeadModel"
+  ],
+  "attn_dropout_prob": 0.0,
+  "auto_map": {
+    "AutoConfig": "Qwen/Qwen-7B-Chat--configuration_qwen.QWenConfig",
+    "AutoModelForCausalLM": "Qwen/Qwen-7B-Chat--modeling_qwen.QWenLMHeadModel"
+  },
+  "bf16": false,
+  "emb_dropout_prob": 0.0,
+  "fp16": false,
+  "fp32": false,
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 22016,
+  "kv_channels": 128,
+  "layer_norm_epsilon": 1e-06,
+  "max_position_embeddings": 32768,
+  "model_type": "qwen",
+  "no_bias": true,
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "onnx_safe": null,
+  "rotary_emb_base": 10000,
+  "rotary_pct": 1.0,
+  "scale_attn_weights": true,
+  "seq_length": 8192,
+  "softmax_in_fp32": false,
+  "tie_word_embeddings": false,
+  "tokenizer_class": "QWenTokenizer",
+  "transformers_version": "4.40.1",
+  "use_cache": true,
+  "use_cache_kernel": false,
+  "use_cache_quantization": false,
+  "use_dynamic_ntk": true,
+  "use_flash_attn": "auto",
+  "use_logn_attn": true,
+  "vocab_size": 151936
+}
+
+
+05/05/2024 22:26:39 - INFO - transformers.modeling_utils - loading weights file model.safetensors from cache at /Users/hanyiye/.cache/huggingface/hub/models--Qwen--Qwen-7B-Chat/snapshots/93a65d34827a3cc269b727e67004743b723e2f83/model.safetensors.index.json
+
+05/05/2024 22:32:26 - WARNING - huggingface_hub.file_download - Error while downloading from https://cdn-lfs.huggingface.co/repos/a7/32/a7328535834e9b3be898fab8867c7339313f87809c35a91759b4e1e3a9417d6b/ed3ac4983f682a999b0e4b6f072aad294c4fd9a7e968e90835ba5c4b466d3c7c?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27model-00001-of-00008.safetensors%3B+filename%3D%22model-00001-of-00008.safetensors%22%3B&Expires=1715221599&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTIyMTU5OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy9hNy8zMi9hNzMyODUzNTgzNGU5YjNiZTg5OGZhYjg4NjdjNzMzOTMxM2Y4NzgwOWMzNWE5MTc1OWI0ZTFlM2E5NDE3ZDZiL2VkM2FjNDk4M2Y2ODJhOTk5YjBlNGI2ZjA3MmFhZDI5NGM0ZmQ5YTdlOTY4ZTkwODM1YmE1YzRiNDY2ZDNjN2M%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=AgEctTQaIxVrA6UabJQCd2hIiGi43uxhMdM6u%7EvGjgCD7csk15hnmvkKeFy3km7yxOoV5LWCs-30mKXEKSyPEOwFaLjLGUo24Z%7EbvTDszDC95JZFIAMtp7jIF6ovncfwax30fgcH%7ENUk61l0sCHwA-C7MIomyjnwtC83xccsmzC8bYN2retWH1SbPmj1dC2rJ0fDVZ2LB6Kgxxa7ORdJfKiuI0nQWmieDHcT2qqnFABv9ovUCf9cq2LUN5Gzdwp-e2gjPSgqvLEJsXbBWEtXlwaM63RHuhko8ulzNuZmvc1K9umatxSBumqBfZcT9P1R%7EMsDE7VewNeW-pWXAmT%7E5g__&Key-Pair-Id=KVTP0A1DKRTAX: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Read timed out.
+Trying to resume download...
+
+05/05/2024 22:54:54 - INFO - transformers.modeling_utils - Instantiating QWenLMHeadModel model under default dtype torch.float32.
+
+05/05/2024 22:54:54 - INFO - transformers.generation.configuration_utils - Generate config GenerationConfig {}
+
+
